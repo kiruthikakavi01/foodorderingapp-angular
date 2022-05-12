@@ -1,0 +1,29 @@
+<h1>List All Menu</h1>
+<table class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>s.no</th>
+            <th>Dish Name</th>
+            <th>Dish Type</th>
+            <th>Price</th>
+            <th>Hotel Name</th>
+           
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let menu of menus;">
+            
+            <td>{{menu.id}}</td>
+            <td>{{menu.dishName}}</td>
+            <td>{{menu.dishType}}</td>
+            <td>{{menu.price}}</td>
+            <td>{{menu.hotelName}}</td>
+            <td>{{menu.ingredients}}</td>
+            <td><button type="button" (click)="remove(menu.id)">Delete</button></td>
+            <td><a routerLink="/update-dish/{{menu.id}}">Update</a></td>
+            
+        </tr>
+    </tbody>
+</table>

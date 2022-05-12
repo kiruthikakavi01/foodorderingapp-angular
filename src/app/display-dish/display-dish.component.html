@@ -1,0 +1,16 @@
+<p>display-dish works!</p>
+<div class="row">
+<div class="col-4"> 
+<div  *ngFor="let menu of menus">
+<div class="card text-white bg-dark my-4 mb-2" style="max-width: 18rem;">
+    <img src="assets/image/{{menu.imageUrl}}" routerLink="/view-dish/{{menu.id}}"class="card-img-top" alt="{{menu.imageUrl}}">
+    <div class="card-body">
+      <h4 class="card-title">{{menu.dishName}}</h4>
+      <h5 class="card-title">Hotel:{{menu.hotelName}}</h5>
+      <p class="card-title">Rs:{{menu.price}}</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>

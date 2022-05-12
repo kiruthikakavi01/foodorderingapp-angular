@@ -1,0 +1,37 @@
+<h2>Insert Dish</h2>
+<form (ngSubmit)="addDish()">
+    
+<div>
+    <label for="dishName">Dish Name:</label>
+    <input type="text" name="dishName" [(ngModel)]="dishName" placeholder="Enter Dish Name" required > 
+</div>
+<br>
+<div>
+    <label for="dishType">Dish Type:</label>
+    <input type="text" name="dishType" [(ngModel)]="dishType" placeholder="Enter Dish Type" required > 
+</div>
+<br>
+<div>
+    <label for="price">Price:</label>
+    <input type="number" name="price" [(ngModel)]="price"  placeholder="Enter Price" required > 
+</div>
+<br>
+<div>
+    <label for="hotelName">Hotel Name:</label>
+    <input type="text" name="hotelName" [(ngModel)]="hotelName"  placeholder="Enter Hotel Name" required > 
+</div>
+<br>
+<div>
+    <label for="ingredients">Ingredients:</label>
+    <input type="text" name="ingredients" [(ngModel)]="ingredients" placeholder="Enter ingredients" required>
+</div>
+<br>
+<div>
+    <label for="imageUrl">Image URL:</label>
+    <input type="text" name="imageUrl" [(ngModel)]="imageUrl"  placeholder="Enter image Url" required > 
+</div>
+<br>
+    <button type="submit">
+        submit
+    </button>
+</form>

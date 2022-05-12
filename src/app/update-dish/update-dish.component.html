@@ -1,0 +1,29 @@
+<h2>Update Dish</h2>
+<form (ngSubmit)="updateDish()" *ngIf="menu">
+    <div>
+        <label for="dishId">Dish Id:</label>
+        <input type="number" name="dishId" [(ngModel)]="menu.id" placeholder="Enter Dish Name" required > 
+    </div>
+    <br>
+    <div>
+        <label for="dishName">Dish Name:</label>
+        <input type="text" name="dishName" [(ngModel)]="menu.dishName" placeholder="Enter Dish Name" required > 
+    </div>
+    <br>
+    <div>
+        <label for="dishType">Dish Type:</label>
+        <input type="text" name="dishType" [(ngModel)]="menu.dishType" placeholder="Enter Dish Type" required > 
+    </div>
+    <br>
+    <div>
+        <label for="price">Price:</label>
+        <input type="number" name="price" [(ngModel)]="menu.price"  placeholder="Enter Price" required > 
+    </div>
+    <br>
+    <div>
+        <label for="hotelName">Hotel Name:</label>
+        <input type="text" name="hotelName" [(ngModel)]="menu.hotelName"  placeholder="Enter Hotel Name" required > 
+    </div>
+    <br>
+        <button type="submit">submit </button>
+</form>

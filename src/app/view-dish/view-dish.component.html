@@ -1,0 +1,15 @@
+<p>view-dish works!</p>
+<div *ngIf="dish">
+<img src="assets/image/{{dish.imageUrl}}" width="200" height="200" alt="{{dish.imageUrl}}">
+<h4>{{dish.dishName}}</h4>
+<h5>{{dish.hotelName}}</h5>
+<h2>Rs.{{dish.price}}</h2>
+<span><button class="btn btn-primary">Add to Cart</button></span>
+<hr>
+<h5>Ingredients:</h5>
+<ul>
+    <li *ngFor="let ing of getDishIngredients(dish)">{{ing}}</li>
+</ul>
+
+
+</div>
